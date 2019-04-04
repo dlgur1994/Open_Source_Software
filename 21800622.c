@@ -36,3 +36,17 @@ int sort_digits(int n) {
   return num;
 }
 
+boolean isPrime(int n){
+	int i = 0;
+
+	if(n == 2) { return true; }
+
+	if(n < 2) { return false; }
+
+	for(i = 2; i < n; i++){
+		if(n % i == 0){
+			return false;
+		}
+	}return true;
+}
+

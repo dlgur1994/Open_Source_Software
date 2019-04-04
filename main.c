@@ -28,6 +28,11 @@ int main(void) {
             printf("reverse> %d\n", reverse_digits(atoi(input)));
             printf("sort> %d\n", sort_digits(atoi(input)));
             printf("binary> %s\n", binarized(atoi(input)));
+	    if(isPrime(atoi(input)) == 0){
+	    	printf("isPrime> False\n");
+	    }else{
+		    printf("isPrime> True\n");
+	    }
         }
     }
     printf("(bye)\n");
